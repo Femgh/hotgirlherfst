@@ -1,0 +1,153 @@
+* {
+  padding:0%;
+  margin: 0%;
+  box-sizing:border-box;
+}
+
+/* comments zet je hier */
+
+body {
+  background: #fff0db;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  margin: 1vw;
+  color:rgb(91, 65, 35);
+}
+
+.introtekst {
+  background: none;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 1vw;
+  }
+
+h1 {
+  width: 60vw;
+  height: 5%; 
+  margin-left: 18vw;
+  text-align: center;
+  color:rgb(205, 107, 50);
+  margin-bottom: 1vw;
+}
+
+ h4 {
+  text-align: center;
+}
+
+h3 { /* intro van pagina */
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 605;
+}
+
+h5 {
+  text-align: right;
+}
+
+img {
+  width: 25%;
+  height:30%;
+  padding: 1em 0em 1em 1em;
+}
+
+nav ul { /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: flex;
+  justify-content: center; 
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav a {
+  margin: 0em 2em 0 1em;
+  width: 12vw;
+  border-radius: 1vw;
+  padding: 3px;
+  border: 0.5vw solid #ddb892;
+  background: #ddb892;
+  text-decoration: none;
+  color: rgb(91, 65, 35);
+}
+
+nav a:hover, nav a:active { 
+  background:rgb(130, 92, 49);  
+  color: white;
+  border-color: rgb(130, 92, 49);
+  transition: all 800ms ease;
+  transform: rotate(360deg);
+}
+
+article{
+  display: flex;
+}
+
+section{
+  background: #ddb892;
+  border: 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border-radius: 2vw;
+  margin-bottom: 2em;
+}
+
+.koffietentjes {
+  padding: 1em;
+}
+
+.koffietentjes img {
+  width: 40vh;
+  height: 40vh;
+  margin-top: 2em;
+}
+
+.koffietentjes p{
+  padding: 4em;
+}
+
+ul li, ol li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.tekstnaastpic img {
+  width: 20vw;
+  height: 40vh;
+}
+
+.outfits {
+  background-color: #fff0db;
+}
+
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 130%;
+  }
+  100% {
+    left: 0%;
+    transform: rotateY(180deg);
+    animation-duration: 2s;
+  }
+}
+
+.bladeren {
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.bladeren {
+  position: relative;
+  height: 7em;
+  width: 14em;
+}
